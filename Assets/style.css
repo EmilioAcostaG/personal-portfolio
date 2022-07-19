@@ -1,52 +1,176 @@
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     margin: 0%;
-    display: flex;
-    flex-direction: column;
+    
 }
 
 /* styling for header at top */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     color: white;
     background-color: #313131;
-    padding: 15px 15px;
-    font-size: 25px;
-    text-decoration: solid;
+    height: 100px;
+    padding: 10px 10px;
+    font-size: 40px;
 }
 
-/*styling for main content, to disply work */
-main {
-    display: flex;
-    flex-wrap: wrap;
+h1 {
+    font-variant: small-caps;
+}
 
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+main {
+    display: block;
+}
+
+a {
+    color: black;
 }
 
 /* styling for nav bar at the top */
 nav ul {
+    list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 15px;
     background-color: #ababab;
     font-size: 20px;
     overflow: hidden;
 }
 
 nav li {
-    display: inline;
-    float: right;
+    display: inline-block;
 }
 
-nav li a {
+/* styling of nav links at top and links at Contact Me section */
+nav li a
+ {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 14px;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 nav a:hover {
     background-color: #999;
+}
+
+.profile-pic {
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    border: 2px solid #313131;
+}
+
+
+.about-me, .work, .contact-me {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+
+
+.float-left {
+    display: inline;
+    text-align: right;
+    border-right: solid 4px #999;
+    width: 15%;
+    padding: 0 20px 0 20px;
+    font-style: oblique;
+
+}
+
+
+section p {
+    margin-left: 3%;
+    width:auto;
+    block-size: auto
+
+}
+
+
+.box-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5em;
+    justify-content: center;
+}
+
+
+
+.project {
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 3%;
+    position: relative;
+   
+}
+
+.project img {
+    width: 30em;
+    height: auto;
+}
+
+.text-block {
+    position: absolute;
+    bottom: .25em;
+    right: .5em;
+    background-color: #313131;
+    color: white;
+    font-size: 2em;
+    padding: 1em;
+}
+
+
+
+.contact-me ul{
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    margin-left: 3%;
+
+}
+
+.contact-me li {
+    display: inline-block;
+    margin: 2%;
+   
+}
+
+.contact-me a:hover {
+    color: blue;
+    font-size: 1.5em;
+}
+
+
+
+@media screen and (max-width: 755px) {
+    header,
+    nav {
+    float: none;
+    display:inline-block;
+    width: 100%;
+    text-align: center;
+    }
+
+    main {
+       
+        text-align: center;
+    }
+
+
 }
